@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600;700;800,900&display=swap');
+
+@media screen and (max-width:905px) {
+    .vertical-responsive {
+        flex-direction: column;
+    }
+
+    .flag {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width:905px) {
+    .flag {
+        margin-right: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000;
+    font-family: consolas;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+h2 {
+    font-size: 37px;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    text-align: center;
+    color: white;
+}
+
+.big-text {
+    font-size: 20px;
+}
+
+.guild-box {
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255,255,255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+
+.guild-container {
+    margin: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    border: 2px solid #1e1f23;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.guild-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.vertical-content {
+    flex-direction: column;
+}
+
+.little-box {
+    max-width: 400px;
+}
+
+.guild-logo img {
+    margin-top: 10px;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+}
+
+.guild-title {
+    margin-right: 20px;
+}
+
+.guild-description {
+    text-align: left;
+}
+
+.to-bottom {
+    margin-top: 25px;
+}
+
+.horizontal-centered {
+    align-items: center;
+}
+
+.block {
+    display: inline-block;
+}
+
+#soleil-rouge .guild-title {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(64,0,0,1) 50%, rgba(255,0,0,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.flag {
+    height: 175px;
+    width: auto;
+}
