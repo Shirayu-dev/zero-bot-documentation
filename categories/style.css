@@ -6,7 +6,7 @@
         align-items: center;
     }
 
-    .responsive-separation {
+    .responsive-bottom-separation {
         margin-bottom: 15px;
     }
 
@@ -16,7 +16,7 @@
 }
 
 @media screen and (min-width:905px) {
-    .responsive-separation {
+    .responsive-bottom-separation {
         margin-right: 20px;
     }
 
@@ -89,8 +89,22 @@ input {
     align-items: center;
 }
 
-.separation {
+.bottom-separation {
     margin-bottom: 15px;
+}
+
+.right-separation {
+    margin-right: 15px;
+}
+
+.left-separation {
+    margin-left: 15px;
+}
+
+.ligne-separation {
+    border: solid rgba(255, 255, 255, 0.9);
+    border-image-outset: 15px;
+    border-left: 1px;
 }
 
 .guild-box {
