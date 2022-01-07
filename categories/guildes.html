@@ -7,6 +7,7 @@
     <link rel="icon" href="../assets/img/logo.ico" />
 </head>
 <body>
+    <a href="/index.html" id="return"><- retour</a>
     <h1 class="text">
         Les guildes
     </h1>
@@ -18,21 +19,165 @@
                         Soleil rouge
                     </h2>
                     <div class="guild-logo">
-                        <img src="../assets/img/soleil rouge/logo s_r.png" alt="Logo de la guilde soleil rouge">
+                        <img src="../assets/img/guilds images/logo s_r.png" alt="Logo de la guilde soleil rouge">
                     </div>
                 </div>
-                <div class="container to-bottom horizontal-centered vertical-responsive">
-                    <img class="flag" src="../assets/img/soleil rouge/soleil rouge img.png" alt="Bannière de la guilde soleil rouge">
-                    <p class="text guild-description little-box block">
+                <div class="container to-bottom horizontal-centered vertical">
+                    <img class="flag separation" src="../assets/img/guilds images/soleil rouge img.png" alt="Bannière de la guilde soleil rouge">
+                    <p class="text text-left little-box block">
                         <span class="big-text">Description :</span><br><br>
                         Regroupant de nombreux et puissant aventurier, les membres de cette guilde sont connues pour leur extraordinaire force ainsi que pour leur chance incroyable.
                     </p>
                 </div>
-                <div class="container">
-                    
+                <div class="container to-bottom vertical">
+                    <p class="text separation">
+                        <span class="big-text">Bonus de guild LVL <span id="level1">1</span> :</span><br><br>
+                        <span class="green">Force : <span id="force1">+20</span> | Chance : <span id="chance1">+20</span></span><br>
+                        <span class="red">Mana : <span id="mana1">-4</span> | Vitesse : <span id="vitesse1">-4</span><br>
+                        Précision : <span id="précision1">-4</span> | Endurance : <span id="endurance1">-4</span></span><br>
+                    </p>
+                    <div class="container horizontal-centered">
+                        <p class="text">
+                            Niveau du bonus :
+                        </p>
+                        <input id="bonusLevel1" type="number" value=1 min=1 max=5 onchange="guildStatBonus(1,this.value)">
+                    </div>
+                </div>
+                <div class="container to-bottom">
+                    <p class="text">
+                        <span class="big-text">Bonus de combat :</span><br><br>
+                        <span class="italic">Info non disponible pour l'instant.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="foret-blanche" class="guild-box">
+        <div class="guild-container">
+            <div class="guild-content">
+                <div class="container horizontal-centered">
+                    <h2 class="guild-title text">
+                        Forêt blanche
+                    </h2>
+                    <div class="guild-logo">
+                        <img src="../assets/img/guilds images/logo f_b.png" alt="Logo de la guilde forêt blanche">
+                    </div>
+                </div>
+                <div class="container to-bottom horizontal-centered vertical">
+                    <img class="flag separation" src="../assets/img/guilds images/forêt blanche img.png" alt="Bannière de la guilde forêt blanche">
+                    <p class="text text-left little-box block">
+                        <span class="big-text">Description :</span><br><br>
+                        Majoritairement constitué d'elfes et de mages, les membres de cette guilde possèdent une grosse quantité de mana et une grande vitesse.
+                    </p>
+                </div>
+                <div class="container to-bottom vertical">
+                    <p class="text separation">
+                        <span class="big-text">Bonus de guild LVL <span id="level2">1</span> :</span><br><br>
+                        <span class="green">Mana : <span id="mana2">+20</span> | Vitesse : <span id="vitesse2">+20</span></span><br>
+                        <span class="red">Force : <span id="force2">-4</span> | Chance : <span id="chance2">-4</span><br>
+                        Précision : <span id="précision2">-4</span> | Endurance : <span id="endurance2">-4</span></span><br>
+                    </p>
+                    <div class="container horizontal-centered">
+                        <p class="text">
+                            Niveau du bonus :
+                        </p>
+                        <input id="bonusLevel2" type="number" value=1 min=1 max=5 onchange="guildStatBonus(2,this.value)">
+                    </div>
+                </div>
+                <div class="container to-bottom">
+                    <p class="text">
+                        <span class="big-text">Bonus de combat :</span><br><br>
+                        <span class="italic">Info non disponible pour l'instant.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ruisseau-bleu" class="guild-box">
+        <div class="guild-container">
+            <div class="guild-content">
+                <div class="container horizontal-centered">
+                    <h2 class="guild-title text">
+                        Ruisseau bleu
+                    </h2>
+                    <div class="guild-logo">
+                        <img src="../assets/img/guilds images/logo r_b.png" alt="Logo de la guilde ruisseau bleu">
+                    </div>
+                </div>
+                <div class="container to-bottom horizontal-centered vertical">
+                    <img class="flag separation" src="../assets/img/guilds images/ruisseau bleu img.png" alt="Bannière de la guilde ruisseau bleu">
+                    <p class="text text-left little-box block">
+                        <span class="big-text">Description :</span><br><br>
+                        Cette guilde possède un grand nombre d'assasin et leurs membres sont réputées pour leur extraordinaire précision et endurance.
+                    </p>
+                </div>
+                <div class="container to-bottom vertical">
+                    <p class="text separation">
+                        <span class="big-text">Bonus de guild LVL <span id="level3">1</span> :</span><br><br>
+                        <span class="green">Précision : <span id="précision3">+20</span> | Endurance : <span id="endurance3">+20</span></span><br>
+                        <span class="red">Force : <span id="force3">-4</span> | Chance : <span id="chance3">-4</span><br>
+                        Mana : <span id="mana3">-4</span> | Vitesse : <span id="vitesse3">-4</span></span><br>
+                    </p>
+                    <div class="container horizontal-centered">
+                        <p class="text">
+                            Niveau du bonus :
+                        </p>
+                        <input id="bonusLevel3" type="number" value=1 min=1 max=5 onchange="guildStatBonus(3,this.value)">
+                    </div>
+                </div>
+                <div class="container to-bottom">
+                    <p class="text">
+                        <span class="big-text">Bonus de combat :</span><br><br>
+                        <span class="italic">Info non disponible pour l'instant.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="empire-des-ombres" class="guild-box">
+        <div class="guild-container">
+            <div class="guild-content">
+                <div class="container horizontal-centered">
+                    <h2 class="guild-title text">
+                        Empire des ombres
+                    </h2>
+                    <div class="guild-logo">
+                        <img src="../assets/img/guilds images/logo e_d_o.png" alt="Logo de la guilde empire des ombres">
+                    </div>
+                </div>
+                <div class="container to-bottom horizontal-centered vertical">
+                    <img class="flag separation" src="../assets/img/guilds images/empire des ombres img.png" alt="Bannière de la guilde empire des ombres">
+                    <p class="text text-left little-box block">
+                        <span class="big-text">Description :</span><br><br>
+                        <span class="italic">Une guilde mystérieuse.<br>Aucune description de cette guilde n'est disponible dans les archives.</span>
+                    </p>
+                </div>
+                <div class="container to-bottom vertical">
+                    <p class="text separation">
+                        <span class="big-text">Bonus de guild LVL <span id="level4">1</span> :</span><br><br>
+                        <span class="green">Force : <span id="force4">+15</span> | Précision : <span id="précision4">+15</span><br>
+                        Vitesse : <span id="vitesse4">+15</span> | Endurance : <span id="endurance4">+15</span><br>
+                        Mana : <span id="mana4">+15</span> | Chance : <span id="chance4">+15</span></span><br>
+                    </p>
+                    <div class="container horizontal-centered">
+                        <p class="text">
+                            Niveau du bonus :
+                        </p>
+                        <input id="bonusLevel4" type="number" value=1 min=1 max=5 onchange="guildStatBonus(4,this.value)">
+                    </div>
+                </div>
+                <div class="container to-bottom">
+                    <p class="text">
+                        <span class="big-text">Bonus de combat :</span><br><br>
+                        <span class="italic">Info non disponible pour l'instant.</span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script src="../script/guildes.js"></script>
 </html>

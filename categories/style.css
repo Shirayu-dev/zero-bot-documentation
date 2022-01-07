@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600;700;800,900&display=swap');
 
-@media screen and (max-width:905px) {
+/*@media screen and (max-width:905px) {
     .vertical-responsive {
         flex-direction: column;
+        align-items: center;
     }
 
-    .flag {
+    .responsive-separation {
         margin-bottom: 15px;
+    }
+
+    input {
+        margin-top: 15px;
     }
 }
 
 @media screen and (min-width:905px) {
-    .flag {
+    .responsive-separation {
         margin-right: 20px;
     }
-}
+
+    input {
+        margin-left: 15px;
+    }
+}*/
 
 body {
     margin: 0;
@@ -31,7 +40,7 @@ body {
 
 h1 {
     font-size: 48px;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
@@ -50,6 +59,18 @@ p {
     margin: 0;
 }
 
+input {
+    width: 59px;
+    height: 21px;
+    margin-left: 15px;
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid #1e1f23;
+}
+
+
 .text {
     text-align: center;
     color: white;
@@ -59,12 +80,26 @@ p {
     font-size: 20px;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.vertical {
+    flex-direction: column;
+    align-items: center;
+}
+
+.separation {
+    margin-bottom: 15px;
+}
+
 .guild-box {
     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
                 inset -5px -5px 15px rgba(255,255,255,0.1),
                 5px 5px 15px rgba(0,0,0,0.3),
                 -5px -5px 15px rgba(255,255,255,0.1);
     border-radius: 15px;
+    margin-bottom: 50px;
 }
 
 .guild-container {
@@ -107,7 +142,7 @@ p {
     margin-right: 20px;
 }
 
-.guild-description {
+.text-left {
     text-align: left;
 }
 
@@ -123,8 +158,39 @@ p {
     display: inline-block;
 }
 
+.green {
+    color: greenyellow;
+}
+
+.red {
+    color: red;
+}
+
 #soleil-rouge .guild-title {
     background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(64,0,0,1) 50%, rgba(255,0,0,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#foret-blanche .guild-title {
+    font-size: 38px;
+}
+
+#ruisseau-bleu .guild-title {
+    background: linear-gradient(90deg, rgba(0,255,255,1) 0%, rgba(0,111,255,1) 50%, rgba(0,255,255,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+#empire-des-ombres .guild-title {
+    font-size: 33px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 50%, rgba(0,0,0,1) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -135,4 +201,16 @@ p {
 .flag {
     height: 175px;
     width: auto;
+}
+
+#return {
+    /*position: relative;
+    top: 30px;
+    left: 30px;*/
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    align-self: flex-start;
+    margin: 20px;
+    margin-left: 30px;
 }
