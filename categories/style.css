@@ -108,6 +108,10 @@ input {
     margin-bottom: 15px;
 }
 
+.big-bottom-separation {
+    margin-bottom: 50px;
+}
+
 .right-separation {
     margin-right: 15px;
 }
