@@ -42,9 +42,10 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: min(48px,9vw);
     margin-top: 2%;
     margin-bottom: 5%;
+    color: white;
 }
 
 h2 {
@@ -86,8 +87,12 @@ input {
     color: white;
 }
 
+.text:not(h1):not(h2) {
+    font-size: min(16px,3.5vw);
+}
+
 .big-text {
-    font-size: 20px;
+    font-size: min(20px,5vw);
 }
 
 .italic {
@@ -123,6 +128,7 @@ input {
                 5px 5px 15px rgba(0,0,0,0.3),
                 -5px -5px 15px rgba(255,255,255,0.1);
     border-radius: 15px;
+    margin: 0 15px;
     margin-bottom: 50px;
 }
 
@@ -166,7 +172,7 @@ input {
 
 .guild-title {
     margin-right: 20px;
-    font-size: clamp(24px, 8vw, 48px);
+    font-size: clamp(24px, 7vw, 48px);
 }
 
 .text-left {
@@ -203,7 +209,7 @@ input {
 }
 
 #foret-blanche .guild-title {
-    font-size: clamp(24px, 8vw, 48px);
+    font-size: clamp(24px, 7vw, 48px);
 }
 
 #ruisseau-bleu .guild-title {
@@ -216,7 +222,7 @@ input {
 }
 
 #empire-des-ombres .guild-title {
-    font-size: clamp(15px, 6vw, 37px);
+    font-size: clamp(15px, 5vw, 37px);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 50%, rgba(0,0,0,1) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
