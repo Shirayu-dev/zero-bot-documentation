@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600;700;800,900&display=swap');
-
 /*@media screen and (max-width:905px) {
     .vertical-responsive {
         flex-direction: column;
@@ -24,6 +23,10 @@
         margin-left: 15px;
     }
 }*/
+
+body * {
+    max-width: 100%;
+}
 
 body {
     margin: 0;
@@ -70,6 +73,13 @@ input {
     border: 2px solid #1e1f23;
 }
 
+.chart {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 75vw;
+}
 
 .text {
     text-align: center;
@@ -147,13 +157,16 @@ input {
 
 .guild-logo img {
     margin-top: 10px;
-    height: 70px;
-    width: 70px;
+    max-height: 70px;
+    max-width: 70px;
+    width: 14vw;
+    height: auto;
     display: inline-block;
 }
 
 .guild-title {
     margin-right: 20px;
+    font-size: clamp(24px, 8vw, 48px);
 }
 
 .text-left {
@@ -190,7 +203,7 @@ input {
 }
 
 #foret-blanche .guild-title {
-    font-size: 38px;
+    font-size: clamp(24px, 8vw, 48px);
 }
 
 #ruisseau-bleu .guild-title {
@@ -203,7 +216,7 @@ input {
 }
 
 #empire-des-ombres .guild-title {
-    font-size: 33px;
+    font-size: clamp(15px, 6vw, 37px);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 50%, rgba(0,0,0,1) 100%);
     background-clip: border-box;
     -webkit-background-clip: text;
@@ -213,8 +226,9 @@ input {
 }
 
 .flag {
-    height: 175px;
-    width: auto;
+    height: auto;
+    width: 85%;
+    max-width: 350px;
 }
 
 #return {
