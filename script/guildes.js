@@ -1,5 +1,20 @@
 const guildStatNameBonus=[["Force","Chance","Mana","Vitesse","Précision","Endurance"],["Mana","Vitesse","Force","Chance","Précision","Endurance"],["Précision","Endurance","Force","Chance","Mana","Vitesse"],["Force","Précision","Vitesse","Endurance","Mana","Chance"],["Force","Précision","Vitesse","Endurance","Mana","Chance"]];
 
+const xpForAGuildLevel=(guildLvl)=>{
+    if (guildLvl>12) return 0;
+    const arrayXpForLevel=[2,5,9,14,20,27,35,44,54,65,77,90];
+    return arrayXpForLevel[guildLvl-1];
+};
+
+//name : addLevelXP | doc : guild
+const totalXpForAGuildLevel=(lvl)=>{
+    var xp=0;
+    for (var i=1;i<=lvl;i++){
+        xp+=xpForAGuildLevel(i);
+    };
+    return xp;
+}
+
 const arrayXNb=(ArrayOne,nb)=>{
     var XArray=[]
     for (var i=0;i<ArrayOne.length;i++){
@@ -28,26 +43,19 @@ const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Niveau 1', 'Niveau 2', 'Niveau 3', 'Niveau 4', 'Niveau 5', 'Niveau 6', 'Niveau 7','Niveau 8', 'Niveau 9', 'Niveau 10', 'Niveau 11', 'Niveau 12'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
+            type: 'line',
+            label: 'Quantité d\'XP pour atteindre ce niveau ',
+            data: [xpForAGuildLevel(1), xpForAGuildLevel(2), xpForAGuildLevel(3), xpForAGuildLevel(4), xpForAGuildLevel(5), xpForAGuildLevel(6), xpForAGuildLevel(7), xpForAGuildLevel(8), xpForAGuildLevel(9), xpForAGuildLevel(10), xpForAGuildLevel(11), xpForAGuildLevel(12)],
+            backgroundColor: '#000',
+            borderColor: '#000',
+            borderWidth: 1
+        },
+        {
+            label: 'Quantité d\'XP total ',
+            data: [totalXpForAGuildLevel(1), totalXpForAGuildLevel(2), totalXpForAGuildLevel(3), totalXpForAGuildLevel(4), totalXpForAGuildLevel(5), totalXpForAGuildLevel(6), totalXpForAGuildLevel(7), totalXpForAGuildLevel(8), totalXpForAGuildLevel(9), totalXpForAGuildLevel(10), totalXpForAGuildLevel(11), totalXpForAGuildLevel(12)],
+            borderColor: '#000',
             borderWidth: 1
         }]
     },
@@ -56,6 +64,11 @@ const myChart = new Chart(ctx, {
             y: {
                 beginAtZero: true
             }
-        }
+        },
+        interaction: {
+            axis: 'xy',
+            intersect: true,
+            mode: 'nearest'
+          },
     }
 });
