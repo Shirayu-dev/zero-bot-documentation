@@ -45,7 +45,7 @@ h1 {
     font-size: min(48px,9vw);
     margin-top: 2%;
     margin-bottom: 5%;
-    color: white;
+    color: rgb(232, 230, 227);
 }
 
 h2 {
@@ -67,16 +67,45 @@ input {
     width: 59px;
     height: 21px;
     margin-left: 15px;
-    color: white;
+    color: rgb(232, 230, 227);
     background: black;
     border: none;
     border-radius: 5px;
     border: 2px solid #1e1f23;
 }
 
+table {
+    color: rgb(232, 230, 227);
+    border: solid rgb(232, 230, 227) 2px;
+    border-spacing: 0px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 85vw;
+}
+
+th {
+    font-size: 22px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+td {
+    font-size: clamp(10px, 3vw, 18px);
+    padding: 10px 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.top-border {
+    border-top: solid rgb(232, 230, 227) 2px;
+}
+
+.right-border {
+    border-right: solid rgb(232, 230, 227) 2px;
+}
+
 .chart {
     width: 600px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(232, 230, 227, 0.9);
     padding: 20px;
     border-radius: 15px;
     max-width: 75vw;
@@ -84,7 +113,7 @@ input {
 
 .text {
     text-align: center;
-    color: white;
+    color: rgb(232, 230, 227);
 }
 
 .text:not(h1):not(h2) {
@@ -121,7 +150,7 @@ input {
 }
 
 .ligne-separation {
-    border: solid rgba(255, 255, 255, 0.9);
+    border: solid rgba(232, 230, 227, 0.9);
     border-image-outset: 15px;
     border-left: 1px;
 }
@@ -209,7 +238,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: rgb(232, 230, 227);
 }
 
 #foret-blanche .guild-title {
@@ -222,7 +251,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: rgb(232, 230, 227);
 }
 
 #empire-des-ombres .guild-title {
@@ -232,7 +261,7 @@ input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: rgb(232, 230, 227);
 }
 
 .flag {
@@ -245,7 +274,7 @@ input {
     /*position: relative;
     top: 30px;
     left: 30px;*/
-    color: white;
+    color: rgb(232, 230, 227);
     text-decoration: none;
     font-size: 25px;
     align-self: flex-start;
