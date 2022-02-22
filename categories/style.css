@@ -95,6 +95,38 @@ td {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/*
+.cell-with-comment{
+    position:relative;
+  }
+  
+  .cell-comment{
+    display:none;
+    opacity: 0;
+    visibility: hidden;
+    position:absolute; 
+    z-index:100;
+    border:1px;
+    background-color:white;
+    border-style:solid;
+    border-width:1px;
+    border-color:red;
+    padding:3px;
+    color:red; 
+    top:-50px; 
+    left:0px;
+    transition-delay: 1s;
+  }
+  
+  .cell-with-comment:hover span.cell-comment{
+    opacity: 1;
+    visibility: visible;
+    display:block;
+    transition-delay: 1s;
+  }
+
+  */
+  
 .top-border {
     border-top: solid rgb(232, 230, 227) 2px;
 }
